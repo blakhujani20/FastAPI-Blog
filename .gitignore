@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Database
+*.db
+*.sqlite3
+
+# Uploaded media
+media/
+
+# IDE settings
+.vscode/
+
+# Personal notes
+snppits.txt
