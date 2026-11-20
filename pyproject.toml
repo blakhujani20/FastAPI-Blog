@@ -6,10 +6,11 @@ readme = "README.md"
 authors = [
     { name = "blakhujani20", email = "bhaveshlakhujani@gmail.com" }
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.14"
 dependencies = [
     "aiosqlite>=0.22.1",
     "fastapi[standard]>=0.162.5",
+    "greenlet>=3.5.6",
     "sqlalchemy>=2.0.58",
 ]
 
