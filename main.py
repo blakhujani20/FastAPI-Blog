@@ -109,6 +109,25 @@ async def user_posts_page(
     )
 
 
+## login and register template_routes
+@app.get("/login", include_in_schema=False)
+async def login_page(request: Request):
+    return templates.TemplateResponse(
+        request,
+        "login.html",
+        {"title": "Login"},
+    )
+
+
+@app.get("/register", include_in_schema=False)
+async def register_page(request: Request):
+    return templates.TemplateResponse(
+        request,
+        "register.html",
+        {"title": "Register"},
+    )
+
+
 #### URL starts with /api are for developers testing and getting the JSON response and above all are to get the HTML UI responses.
 #### Below url can be shown in documentation and above with html can't because schema = false.
 
